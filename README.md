@@ -39,7 +39,7 @@ Manage bikers responsible for performing washes in assigned areas.
 - Name
 - Mobile number
 - Unique biker identifier
-- Assigned area(s)
+- Assigned area
 - Total number of washes
 - Total earnings / commission
 - Rating
