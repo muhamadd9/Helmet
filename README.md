@@ -143,18 +143,53 @@ Extra services that can be added to any wash.
 ## 7. Areas & Zones Management
 
 ### Description
-Define service areas and assign bikers to them.
+Define service areas, assign bikers, and manage available washing times per zone.
 
 ### Features
 - Create area using map.
 - Define area using polygon drawing.
 - Set area radius if needed.
+- Assign one or more bikers to the area.
 - Edit area.
 - Delete area.
 
 ### Area Data
 - Polygon coordinates
 - Assigned biker(s)
+
+---
+
+### 7.1 Zone Time Slots Management
+
+### Description
+Control available washing times for each zone to ensure proper scheduling and avoid overbooking.
+
+### Purpose
+- Admin defines when washes can be performed in each zone.
+- Users can only book washes in **available (empty) time slots**.
+- Prevents scheduling conflicts and biker overload.
+
+### Features
+- Add time slots per zone.
+- Edit time slots.
+- Delete time slots.
+- Enable / disable specific time slots.
+- View all time slots for a zone.
+
+### Time Slot Data
+- Zone reference
+- Day(s) of week (e.g. Saturday – Thursday)
+- Start time
+- End time
+- Slot duration (optional, e.g. 30 / 60 minutes)
+- Max bookings per slot (optional)
+- Status (active / inactive)
+
+### Booking Logic
+- User selects location → system detects zone.
+- System fetches available time slots for that zone.
+- Already booked slots are excluded.
+- User can only select empty, active time slots.
 
 ---
 
